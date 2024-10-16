@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Menu de operaciones";
+    do{
+    cout<<"\nSuma = 1";
+    cout<<"\nResta = 2";
+    cout<<"\nMultiplicacion =3";
+    cout<<"\nDivision = 4";
+    cout<<"\nQue operacion quieres hacer??  : ";
+
+    cin>>n;
+    }while (n<1 || n>4);
+
+    cout<<"\nIntroduce los numeros con los quieres operar  :";
+    int n1;
+    int n2;
+    cout<<"\nNumero 1 : ";
+    cin>> n1;
+    cout<<"Numero 2 : ";
+    cin>> n2;
+
+    int res;
+
+    switch (n){
+    case 1:
+        res = n1 + n2;
+        break;
+
+    case 2:
+        res = n1-n2;
+        break;
+
+    case 3:
+        res = n1*n2;
+        break;
+
+    case 4:
+        res = n1/n2;
+        break;
+    }
+    cout<<"\nEl resultado de tu operacion es : " <<res<<"\n";
+}
